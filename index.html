@@ -1,47 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página de Teste</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Currículo</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-n+yrMvP2h3CxvqdrXJnjJj+AqZcLZpH5pNvkXrISb4wt9x9Xpj5h+hvC0o1v1STx6Tw9xDQ+47o2JU4j5U2cUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .profile-pic {
+      max-width: 150px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    .section-title {
+      color: #007bff;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: #007bff;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Minha Página de Teste</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Sobre Mim</h2>
-            <p>Meu nome é [Seu Nome]. Eu sou um [sua profissão] baseado em [sua localização].</p>
-        </section>
-        <section>
-            <h2>Experiência</h2>
-            <p>Eu tenho experiência em [área de experiência].</p>
-        </section>
-        <section>
-            <h2>Educação</h2>
-            <p>Eu me formei na [sua instituição] com um diploma em [seu curso].</p>
-        </section>
-        <section>
-            <h2>Contato</h2>
-            <p>Você pode entrar em contato comigo através do meu email: [seu email].</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Meu Site</p>
-    </footer>
+  <div class="container mt-5">
+    <div class="header">
+      <h1>Seu Nome</h1>
+      <p>Desenvolvedor Web Full Stack</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="caminho/para/sua/foto.jpg" alt="Foto" class="profile-pic">
+      </div>
+      <div class="col-md-8">
+        <h2 class="section-title">Resumo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque velit vitae ex lacinia, ac ullamcorper erat tristique.</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <h2 class="section-title">Educação</h2>
+        <p><strong>Nome do Curso ou Instituição</strong><br>
+        Grau obtido - Data de conclusão</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <h2 class="section-title">Experiência Profissional</h2>
+        <p><strong>Nome da Empresa</strong><br>
+        Cargo - Data de início até data de saída</p>
+        <ul>
+          <li>Responsabilidade 1</li>
+          <li>Responsabilidade 2</li>
+          <li>Responsabilidade 3</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <h2 class="section-title">Habilidades</h2>
+        <ul>
+          <li>Habilidade 1</li>
+          <li>Habilidade 2</li>
+          <li>Habilidade 3</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-rHTenSxaSa2ytVgM2k6aXNsdVLE7p1N7AOb2hqsClI7lHG5AYRwBhTuV40tOENgZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6p8tTP4yY9W8Om6BfvTty6XyJvZv4Dl+" crossorigin="anonymous"></script>
+  <!-- Font Awesome Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-zaaK/8cBxfES18lP5YI8+HFnE6kwq0MquO7hHus4d8QKgRRUTVCMF44TZ8lO/4NNBrWYvYlQWNTBO9k8VqBl1Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
